@@ -1,0 +1,69 @@
+{
+  "properties": [
+    {
+      "name": "rest-client.clients",
+      "type": "java.util.Map<java.lang.String,com.processapi.rest.config.RestClientProperties.ClientConfig>",
+      "description": "Map of REST client configurations"
+    },
+    {
+      "name": "rest-client.circuit-breaker.failure-threshold",
+      "type": "java.lang.Integer",
+      "description": "Number of failures before opening the circuit",
+      "defaultValue": 5
+    },
+    {
+      "name": "rest-client.circuit-breaker.reset-timeout",
+      "type": "java.lang.Long",
+      "description": "Time in milliseconds to wait before attempting to reset the circuit",
+      "defaultValue": 60000
+    },
+    {
+      "name": "rest-client.circuit-breaker.half-open-timeout",
+      "type": "java.lang.Long",
+      "description": "Time in milliseconds to wait in half-open state",
+      "defaultValue": 30000
+    },
+    {
+      "name": "rest-client.retry.max-attempts",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of retry attempts",
+      "defaultValue": 3
+    },
+    {
+      "name": "rest-client.retry.initial-interval",
+      "type": "java.lang.Long",
+      "description": "Initial retry interval in milliseconds",
+      "defaultValue": 1000
+    },
+    {
+      "name": "rest-client.retry.multiplier",
+      "type": "java.lang.Double",
+      "description": "Multiplier for exponential backoff",
+      "defaultValue": 2.0
+    },
+    {
+      "name": "rest-client.retry.max-interval",
+      "type": "java.lang.Long",
+      "description": "Maximum retry interval in milliseconds",
+      "defaultValue": 10000
+    },
+    {
+      "name": "rest-client.rate-limit.permits-per-second",
+      "type": "java.lang.Integer",
+      "description": "Number of requests allowed per second",
+      "defaultValue": 10
+    },
+    {
+      "name": "rest-client.rate-limit.max-burst-seconds",
+      "type": "java.lang.Integer",
+      "description": "Maximum burst time in seconds",
+      "defaultValue": 1
+    },
+    {
+      "name": "rest-client.rate-limit.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether rate limiting is enabled",
+      "defaultValue": true
+    }
+  ]
+} 
